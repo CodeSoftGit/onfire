@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "onfire"
-version = "0.1.0"
+version = "0.1.1"
 description = "AAFire-style terminal fire in pure Python + curses."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -19,7 +19,9 @@ classifiers = [
   "Topic :: Artistic Software",
   "Topic :: Games/Entertainment",
 ]
-dependencies = []
+dependencies = [
+    "psutil>=7.2.1",
+]
 
 [project.optional-dependencies]
 windows = ["windows-curses>=2.3.2"]
